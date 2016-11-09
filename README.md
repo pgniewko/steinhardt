@@ -1,13 +1,13 @@
 DESCRIPTION
 ==================================================
-The ```steinhardt``` library ...
+```steinhardt``` library.
 
 
 GETTING THE CODE
 ==================================================
 * To get the code:
 ```
-git clone git@bitbucket.org:pawelgniewek/rndmesh.git
+git clone git@bitbucket.org:pawelgniewek/steinhardt.git
 ```
 
 * To obtain the most recent version of the code:
@@ -15,20 +15,13 @@ git clone git@bitbucket.org:pawelgniewek/rndmesh.git
 git pull origin master
 ```
 
-COMPILING AND INSTALLATION - LINUX
+COMPILING AND INSTALLATION - LINUX/UNIX
 ==================================================
 
 * compile by:
 ```
 ./build_lib.sh
 ```
-
-
-USAGE
-=====
-The lirbary is open-source. If you want to cite the library in any pubished work please contact me at
-pawel.gniewek@berkeley.edu for an information about credits. 
-
 
 COPYRIGHT NOTICE
 ================
@@ -40,4 +33,5 @@ License: BSD
 
 ACKNOWLEDGMENTS
 ===============
-...
+The lirbary is open-source. If you want to cite the library in any pubished work please contact me at
+pawel.gniewek@berkeley.edu for more information about credits.
