@@ -18,7 +18,7 @@ git pull origin master
 COMPILING AND INSTALLATION - LINUX/UNIX
 ==================================================
 
-* compile by:
+* Compile and install library:
 ```
 ./build_lib.sh
 ```
