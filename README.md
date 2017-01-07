@@ -18,10 +18,16 @@ git pull origin master
 COMPILING AND INSTALLATION - LINUX/UNIX
 ==================================================
 
+* Build the library:
+```
+make build
+```
+
 * Compile and install library:
 ```
-./build_lib.sh
+make install
 ```
+
 
 COPYRIGHT NOTICE
 ================

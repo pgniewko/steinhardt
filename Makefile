@@ -1,4 +1,3 @@
-
 RM          := rm -f
 MKDIR	    := mkdir -p
 # C compiler
@@ -8,7 +7,7 @@ STATIC		:=libsteinhardt.a
 
 SRC			:=./src
 
-CFLAGS 		:=  -O3 -Wall
+CFLAGS 		:= -O3 -Wall
 LDLIBS   	:= -lm -lgsl -lgslcblas
 
 SOURCES	     := $(shell find $(SRC) -type f -name "*.c")
@@ -16,6 +15,7 @@ HEADERS	     := $(shell find $(SRC) -type f -name "*.h")
 OBJECTS      := $(SOURCES:.c=.o)
 
 PREFIX   := /usr/local
+
 
 $(STATIC): $(OBJECTS)
 	@echo "[Link (Static)]"
@@ -29,17 +29,15 @@ $(STATIC): $(OBJECTS)
 
 PHONY: build clean install
 
-build:$(STATIC)
+build: $(STATIC)
 	@echo [Building]
 
 clean:
 	@echo [Cleaning]
 	$(RM) $(STATIC) $(OBJECTS) 
 
-install:$(STATIC)
+install: $(STATIC)
 	@echo [Installing] $<
 	sudo install -m 755 $(STATIC) $(PREFIX)/lib
 	sudo install -m 755 $(HEADERS) $(PREFIX)/include
 
-#all: install
-#	        $(CC) -g -Wall -o program program.c $(LDFLAGS) $(LIBS)
