@@ -43,9 +43,8 @@
  * smaller than r_c. \n
  *
  * Input:	int l, integer of the order parameter. \n
- * 			int n, Number of particles of the cluster. \n
- * 			double rc, cutoff radius. Only bonds of length small that rc
- * 				will be considered. \n
+ * 			int n, Number of neighbor particles \n
+ * 			double xc, yz, zc
  * 			double *x, *y, *z, the x, y and z coordinates of the atoms
  * 				of the cluster. Each of them is an array of dimension n.
  * 				\n
@@ -53,9 +52,7 @@
  * 				the values of the quantities qlm as defined in the above
  * 				equation. \n
  *
- * Output:	The function returns the value of the number of bonds that
- * 			satisfied the cutoff condition |r_{ij}|<r_c .\n
- * 			It will also return the real and imaginary part of this
+ * Output:	The function returns the real and imaginary part of this
  * 			quantities (qlm) in the arrays qlmRe and qlmIm that have
  * 			l+1 components corresponding to the values of m from 0 to l.
  *	 		Notice that in the literature C. Chakravarty Molecular
@@ -127,12 +124,10 @@
 extern "C" {
 #endif
 
-
-int qlm (int l, int n, double rc, double* x, double* y, double* z,
-         double* qlmRe, double* qlmIm);
+void qlm (int l, int n, double xc, double yc, double zc, double *x, double *y, double *z, double *qlmRe, double *qlmIm);
 double qsum (int l, double* qlmRe, double* qlmIm);
 double Ql (int l, int count, double* qlmRe, double* qlmIm);
-double wl (int l, double* qlmRe, double* qlmIm);
+double Wl (int l, double* qlmRe, double* qlmIm);
 
 #ifdef  __cplusplus
 }
