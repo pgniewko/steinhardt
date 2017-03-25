@@ -24,7 +24,7 @@ $(STATIC): $(OBJECTS)
 
 .c.o:
 	@echo [Compile] $<
-	$(CC) -c $(CFLAGS) $< -o $@
+	$(CC) -c $(CFLAGS) $(LDLIBS) $< -o $@
 
 
 PHONY: build clean install
