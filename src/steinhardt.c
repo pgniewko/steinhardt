@@ -22,7 +22,7 @@ void qlm (int l, int n, double xc, double yc, double zc, double *x, double *y, d
         qlmIm[i] = 0.0;
     }
 
-    for (i = 1; i < n; i++)
+    for (i = 0; i < n; i++)
     {
         xm = x[i] - xc;
 	    ym = y[i] - yc;
@@ -44,7 +44,6 @@ void qlm (int l, int n, double xc, double yc, double zc, double *x, double *y, d
 
     return;
 }
-
 
 
 double Ql (int l, int nk, double *qlmRe, double *qlmIm)
