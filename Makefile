@@ -4,6 +4,7 @@ MKDIR	    := mkdir -p
 CC	     	:= g++-4.9
 
 STATIC		:=libsteinhardt.a
+TEST        :=test_geom
 
 SRC			:=./src
 
@@ -22,6 +23,9 @@ $(STATIC): $(OBJECTS)
 	ar -rcs $@ $^
 	ranlib $@
 
+$(TEST): main.cpp
+	$(CC)  -lm -Wall -O3 -std=gnu++11 $^ -o $@ -ldl -lgsl -lsteinhardt
+
 .c.o:
 	@echo [Compile] $<
 	$(CC) -c $(CFLAGS) $(LDLIBS) $< -o $@
@@ -35,6 +39,9 @@ build: $(STATIC)
 clean:
 	@echo [Cleaning]
 	$(RM) $(STATIC) $(OBJECTS) 
+
+test: $(TEST)
+	@echo [Building Done]
 
 install: $(STATIC)
 	@echo [Installing] $<
