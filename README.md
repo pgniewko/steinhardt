@@ -7,7 +7,7 @@ GETTING THE CODE
 ==================================================
 * To get the code:
 ```
-git clone git@bitbucket.org:pawelgniewek/steinhardt.git
+git clone git@github.com:pgniewko/steinhardt.git
 ```
 
 * To obtain the most recent version of the code:
@@ -31,7 +31,7 @@ make install
 
 COPYRIGHT NOTICE
 ================
-Copyright (C) 2014-2016,  Pawel Gniewek  
+Copyright (C) 2014-2018,  Pawel Gniewek  
 Email  : pawel.gniewek@berkeley.edu  
 All rights reserved.  
 License: BSD  
@@ -39,5 +39,5 @@ License: BSD
 
 ACKNOWLEDGMENTS
 ===============
-The lirbary is open-source. If you want to cite the library in any pubished work please contact me at
-pawel.gniewek@berkeley.edu for more information about credits.
+The library is open-source. If you want to cite the library in any pubished work please contact me at
+gniewko.pablo@gmail.com for more information about credits.
