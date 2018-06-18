@@ -31,14 +31,14 @@ make install
 DEPENDENCIES
 ============
 * GNU Scientific Library ([GSL](http://www.gnu.org/software/gsl/)).
-    * On Ubuntu you can install it by running:
-```
-apt-get install libgsl0-dev
-```
-   * On Mac OS you can install it by runnig:
-```
-brew install gsl
-```
+  * On Ubuntu you can install it by running:
+  ```
+  apt-get install libgsl0-dev
+  ```
+  * On Mac OS you can install it by runnig:
+  ```
+  brew install gsl
+  ```
 
 
 COPYRIGHT NOTICE
