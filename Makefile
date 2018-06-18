@@ -1,7 +1,7 @@
 RM          := rm -f
 MKDIR	    := mkdir -p
 # C compiler
-CC	     	:= g++-4.9
+CC	     	:= g++
 
 STATIC		:=libsteinhardt.a
 TEST        :=test_geom
@@ -24,12 +24,11 @@ $(STATIC): $(OBJECTS)
 	ranlib $@
 
 $(TEST): main.cpp
-	$(CC)  -lm -Wall -O3 -std=gnu++11 $^ -o $@ -ldl -lgsl -lsteinhardt
+	$(CC) -lm -Wall -O3 -std=gnu++11 $^ -o $@ -ldl -lgsl -lsteinhardt
 
 .c.o:
 	@echo [Compile] $<
-	$(CC) -c $(CFLAGS) $(LDLIBS) $< -o $@
-
+	$(CC) -c $(CFLAGS) $< -o $@ 
 
 PHONY: build clean install
 
