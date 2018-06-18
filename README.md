@@ -37,7 +37,7 @@ DEPENDENCIES
 apt-get install libgsl0-dev
 ```
 
-    * On Mac OS you can install it by runnig:
+   * On Mac OS you can install it by runnig:
 ```
 brew install gsl
 ```
