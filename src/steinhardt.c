@@ -1,7 +1,8 @@
-#include<gsl/gsl_sf_legendre.h>
-#include<gsl/gsl_sf_coupling.h>
-#include<gsl/gsl_math.h>
-#include<math.h>
+//#include<gsl/gsl_sf_legendre.h>
+//#include<gsl/gsl_sf_coupling.h>
+//#include<gsl/gsl_math.h>
+//#include <stddef.h> 
+//#include<math.h>
 #include"steinhardt.h"
 
 

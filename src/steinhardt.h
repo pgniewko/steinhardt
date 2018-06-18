@@ -117,6 +117,11 @@
  * Output:	qsum as given in the above equation.
  */
 
+#include<math.h>
+#include<gsl/gsl_sf_legendre.h>
+#include<gsl/gsl_sf_coupling.h>
+#include<gsl/gsl_math.h>
+
 #ifndef STEINHARDT_H
 #define STEINHARDT_H
 
