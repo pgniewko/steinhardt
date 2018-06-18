@@ -1,10 +1,4 @@
-//#include<gsl/gsl_sf_legendre.h>
-//#include<gsl/gsl_sf_coupling.h>
-//#include<gsl/gsl_math.h>
-//#include <stddef.h> 
-//#include<math.h>
 #include"steinhardt.h"
-
 
 void qlm (int l, int n, double xc, double yc, double zc, double *x, double *y, double *z, double *qlmRe, double *qlmIm)
 {
