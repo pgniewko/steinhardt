@@ -17,7 +17,6 @@ git pull origin master
 
 COMPILING AND INSTALLATION - LINUX/UNIX
 ==================================================
-
 * Build the library:
 ```
 make build
