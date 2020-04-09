@@ -1,14 +1,14 @@
 RM          := rm -f
 MKDIR	    := mkdir -p
 # C compiler
-CC	     	:= g++-4.9
+CC	     	:= g++-9
 
 STATIC		:=libsteinhardt.a
 TEST        :=test_geom
 
 SRC			:=./src
 
-CFLAGS 		:= -O3 -Wall -std=gnu++11
+CFLAGS 		:= -O3 -Wall -std=gnu++11 -I/usr/local/include
 LDLIBS   	:= -lm -lgsl -lgslcblas
 
 SOURCES	     := $(shell find $(SRC) -type f -name "*.c")
